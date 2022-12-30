@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/index-page.css">
+  <title>a22 express basic</title>
+</head>
+<body>
+  <header>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="home-page btn"><a href="http://localhost:3000">Homepage</a></div>
+      <div>
+        <ul>
+          <li class="btn"><a href="/about">About</a></li>
+          <li class="btn"><a href="/portfolio">Portfolio</a></li>
+          <li class="btn"><a href="/contact">Contact</a></li>
+          {{!-- <li class="btn"><a href="/{{this.title}}">About</a></li>
+          <li class="btn"><a href="/{{this.title}}">Portfolio</a></li>
+          <li class="btn"><a href="/{{this.title}}">Contact</a></li> --}}
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- partial templates will replace the part of "body" here -->
+  {{{ body }}}
+  <!-- include javascript files here -->
+</body>
+</html>
